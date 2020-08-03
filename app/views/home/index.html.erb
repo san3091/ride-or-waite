@@ -1,0 +1,20 @@
+<section class="home-container">
+  <div class="logo-container">
+    <%= image_tag "rowLogoLarge.png", alt: "Ride or Wait Logo!" %>
+  </div>
+  <div class="content-container">
+    <p>The Ride or Wait Tarot updates Pamela Coleman Smith’s art and Edward Waite’s studies for a modern world of constant decisions that bridge the daily and mundane (“should I cancel dinner plans?”) and the deeper stuff (“am I repeating a toxic pattern?”). The symbology doesn't wander far from the classic Rider Waite-Smith deck, but has some cultural updates. This deck can happily live in your purse, tote bag, winter coat pocket, or bedside table, within reach for any moment you ask yourself “ride or wait?"</p>
+    <p>Check out our <a href="https://www.kickstarter.com/projects/158309591/ride-or-wait-tarot">kickstarter page</a> for images!</p>
+  </div>
+  <div class="content-container">
+    <p>We're all sold out of the first edition of the deck!</p>
+    <p>Send us your contact info and we'll keep you up to date on future printings of the Ride ir Wait Tarot!</p>
+    <% if flash[:notice] %>
+      <p><%= flash[:notice] %></p>
+    <% else %>
+      <%= render "contact_requests/form", contact_request: @contact_request %>
+      <%= flash[:error] %>
+    <% end %>
+
+  </div>
+</section>

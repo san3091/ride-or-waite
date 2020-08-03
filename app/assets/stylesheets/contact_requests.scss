@@ -1,0 +1,45 @@
+// Place all the styles related to the contact_requests controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.contact-form {
+  max-width: 300px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin: 10px 0;
+  }
+
+  input[type=text] {
+    margin-bottom: 7px;
+    background: none;
+    border: none;
+    box-sizing: border-box;
+    padding: 0.25rem 0.1rem;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+
+    &:focus {
+      border-bottom: 3px solid black;
+      outline: none;
+    }
+  }
+
+
+  input[type=submit] {
+    border: none;
+    margin-top: 5px;
+    background: rgba(29, 37, 74, 0.7);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 35px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

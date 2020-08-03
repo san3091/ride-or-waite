@@ -1,0 +1,7 @@
+<%= form_with model: contact_request, class: "contact-form" do |f| %>
+  <%= f.label "Name:" %>
+  <%= f.text_field :name, required: true %>
+  <%= f.label "Email:" %>
+  <%= f.text_field :email, required: true %>
+  <%= f.submit "Send" %>
+<% end %>
