@@ -46,8 +46,10 @@ body {
 
 .image-container {
   width: 800px;
+
+  img {
+    width: 100%;
+  }
 }
 
-img {
-  width: 100%;
-}
+
