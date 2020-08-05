@@ -2,19 +2,28 @@
   <div class="logo-container">
     <%= image_tag "rowLogoLarge.png", alt: "Ride or Wait Logo!" %>
   </div>
-  <div class="content-container">
-    <p>The Ride or Wait Tarot updates Pamela Coleman Smith’s art and Edward Waite’s studies for a modern world of constant decisions that bridge the daily and mundane (“should I cancel dinner plans?”) and the deeper stuff (“am I repeating a toxic pattern?”). The symbology doesn't wander far from the classic Rider Waite-Smith deck, but has some cultural updates. This deck can happily live in your purse, tote bag, winter coat pocket, or bedside table, within reach for any moment you ask yourself “ride or wait?"</p>
-    <p>Check out our <a href="https://www.kickstarter.com/projects/158309591/ride-or-wait-tarot">kickstarter page</a> for images!</p>
+  <div class="image-container">
+    <img src="https://ksr-ugc.imgix.net/assets/029/346/942/85fcd185cc9ba17c36e51c65d79de7c3_original.JPG?ixlib=rb-2.1.0&w=700&fit=max&v=1591305160&auto=format&frame=1&q=92&s=7a8c875b912a0058ac99d4051e58c7b8"/>
   </div>
   <div class="content-container">
-    <p>We're all sold out of the first edition of the deck!</p>
-    <p>Send us your contact info and we'll keep you up to date on future printings of the Ride ir Wait Tarot!</p>
+    <h3>We're all sold out of the first edition of the deck!</h3>
+    <p>Interested in a second printing? Let us know below!</p>
     <% if flash[:notice] %>
       <p><%= flash[:notice] %></p>
     <% else %>
       <%= render "contact_requests/form", contact_request: @contact_request %>
       <%= flash[:error] %>
     <% end %>
-
+  </div>
+  <div class="content-container">
+    <p>The Ride or Wait Tarot updates Pamela Coleman Smith’s art and Edward Waite’s studies for a modern world of constant decisions that bridge the daily and mundane (“should I cancel dinner plans?”) and the deeper stuff (“am I repeating a toxic pattern?”). The symbology doesn't wander far from the classic Rider Waite-Smith deck, but has some cultural updates. This deck can happily live in your purse, tote bag, winter coat pocket, or bedside table, within reach for any moment you ask yourself “ride or wait?"</p>
+    <p>Check out our <a href="https://www.kickstarter.com/projects/158309591/ride-or-wait-tarot">kickstarter page!</a></p>
+  </div>
+  <div class="image-container">
+    <%= image_tag "courtSampleResized.png", alt: "Sample court cards"%>
+  </div>
+  <div class="content-container">
+    <p>The first edition of our booklet has a misprint. Use this link to download the pdf version with the correct text for the King of Pentacles.</p>
+    <%= link_to "Download Ride or Wait Tarot booklet", home_download_booklet_url %>
   </div>
 </section>

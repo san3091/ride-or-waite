@@ -4,6 +4,7 @@
 
 body {
   background-color: rgba(29, 37, 74, 1);
+  // background-color: #00163b;
   font-family: 'Mulish', sans-serif;
   font-weight: 400;
   line-height: 1.5em;
@@ -19,24 +20,34 @@ body {
 }
 
 .logo-container {
-  border-radius: 10px;
   margin-top: 40px;
+  margin-bottom: 40px;
   height: 200px;
   padding: 30px;
   background-color: white;
+
+  img {
+    height: 100%;
+  }
+
 }
 
 .content-container {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  text-align: center;
   margin: 0 30px;
+  margin-bottom: 40px;
   margin-top: 40px;
-  max-width: 600px;
+  width: 600px;
   padding: 30px;
   background-color: white;
 }
 
+.image-container {
+  width: 800px;
+}
+
 img {
-  height: 100%;
+  width: 100%;
 }
