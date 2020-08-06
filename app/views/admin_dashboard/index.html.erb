@@ -1,0 +1,9 @@
+
+<section class="contact-list-container">
+  <h1>Contact Requests: </h1>
+  <% @contact_requests.map do |cr| %>
+    <%= render 'contact_requests/contact_request', contact: cr %>
+  <% end %>
+  <%= link_to "Log out", '/logout'%>
+</section>
+
